@@ -24,13 +24,12 @@ p.setup = () => {
 
     p.translate(0.5 * p.width, 0.5 * p.height);
 
-    //const curvature = -1 / (p.width * p.height);
+    // const curvature = -1 / (p.width * p.height);
     // const curvature = 0;
     const curvature = 1 / (p.width * p.height);
 
     const space = GyrovectorSpaceFactory.create(2, curvature);
 
-    const origin = space.createVector(0, 0);
     const u = space.createVector(40, 0);
     const v = u.rotate(p.HALF_PI);
 
