@@ -3,15 +3,11 @@ import { GyrovectorSpaceFactory } from 'gyrovector';
 
 const p = window;
 
-const lineMap = (value, start1, end1, start2, end2) => {
-    return start2.add(end2.mult(p.map(value, start1, end1, 0, 1)));
-};
-
 const drawLine = (start, line) => {
     const segments = 100;
     p.beginShape();
     for (let n = 0; n <= segments; ++n) {
-        const v = lineMap(n, 0, segments, start, line);
+        const v = start.add(line.mult(p.map(n, 0, segments, 0, 1)));
         p.vertex(v.x, v.y);
     }
     p.endShape();
