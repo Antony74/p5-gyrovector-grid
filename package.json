@@ -1,0 +1,26 @@
+{
+    "name": "p5-gyrovector-grid",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "parcel src/index.html"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Antony74/p5-gyrovector-grid.git"
+    },
+    "author": "Antony74",
+    "license": "MIT",
+    "dependencies": {
+        "github-fork-ribbon-css": "^0.2.3",
+        "gyrovector": "^1.0.0",
+        "p5": "^2.0.3"
+    },
+    "devDependencies": {
+        "parcel": "^2.15.4",
+        "prettier": "^3.6.2"
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "singleQuote": true
+    }
+}
